@@ -1,0 +1,24 @@
+@use "../../config/layout.scss";
+
+.left_panel {
+    position: fixed;
+    left: 0;
+    top: layout.$header_panel_height;
+    width: layout.$left_panel_width;
+    height: calc(100% - layout.$header_panel_height);
+    z-index: layout.$left_panel_level;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: -1px 0px 8px 0px rgba(0, 0, 0, 0.25);
+    transition: all .28s ease-in-out;
+
+    &.hide {
+        left: -(layout.$left_panel_width);
+    }
+}
+
+.left_panel {
+    .left_panel_container {
+        position: relative;
+        height: 100%;
+    }
+}

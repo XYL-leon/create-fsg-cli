@@ -1,0 +1,36 @@
+@use "../../config/layout.scss";
+
+.fsg_main_page {
+    width: 100%;
+    height: 100%;
+
+    .map_wrapper {
+        width: calc(100% - #{layout.$left_panel_width} - #{layout.$right_panel_width});
+        height: calc(100% - #{layout.$container_position_top});
+        top: layout.$container_position_top;
+        right: layout.$container_position_right;
+        bottom: layout.$container_position_bottom;
+        left: layout.$container_position_left;
+        transition: all .28s ease-in-out;
+    }
+
+    &.left_panel_hide {
+        .map_wrapper {
+            left: 0;
+            width: calc(100% - #{layout.$right_panel_width});
+        }
+    }
+
+    &.right_panel_hide {
+        .map_wrapper {
+            width: calc(100% - #{layout.$left_panel_width});
+        }
+    }
+
+    &.side_panel_hide {
+        .map_wrapper {
+            left: 0;
+            width: 100%;
+        }
+    }
+}

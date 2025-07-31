@@ -1,0 +1,38 @@
+{
+    "msg": "查询成功",
+    "code": 200,
+    "data": [
+        {
+            "label": "国家站",
+            "value": 1
+        },
+        {
+            "label": "区域站",
+            "value": 2
+        },
+        {
+            "label": "其他站",
+            "value": 3
+        },
+        {
+            "label": "观测值",
+            "value": 4
+        },
+        {
+            "label": "色斑图",
+            "value": 5
+        },
+        {
+            "label": "等值线",
+            "value": 6
+        },
+        {
+            "label": "站名称",
+            "value": 7
+        },
+        {
+            "label": "站号",
+            "value": 8
+        }
+    ]
+}

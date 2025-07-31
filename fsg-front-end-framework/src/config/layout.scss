@@ -1,0 +1,19 @@
+$panel_default_level:10; // 面板的默认定位层级
+
+// 头部面板
+$header_panel_height:56px;
+$header_panel_level:$panel_default_level; // 使用默认层级，如需变动可直接修改此变量
+
+// 左侧面板
+$left_panel_width:384px;
+$left_panel_level:$panel_default_level;
+
+// 右侧面板
+$right_panel_width:320px;
+$right_panel_level:$panel_default_level;
+
+// 地图父级元素
+$container_position_top:$header_panel_height;
+$container_position_right:$right_panel_width;
+$container_position_bottom:0px;
+$container_position_left:$left_panel_width;

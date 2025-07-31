@@ -1,0 +1,22 @@
+// ele样式覆盖
+@use './element-ui.scss';
+//通用配置
+@use './normalize.scss';
+//登录样式
+@use "./login.scss";
+//适配
+@use './media.scss';
+// 工具类函数
+@use './mixin.scss';
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+* {
+  outline: none;
+}
+
+//滚动条样式
+@include mixin.scrollBar;

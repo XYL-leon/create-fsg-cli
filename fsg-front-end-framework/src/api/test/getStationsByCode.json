@@ -1,0 +1,38 @@
+{
+	"msg": "查询成功",
+	"code": 200,
+	"data": {
+		"startTime": "202507090844",
+		"endTime": "202507140844",
+		"data": [
+			{
+				"province": "吉林省",
+				"city": "延边朝鲜族自治州",
+				"cnty": "龙井市",
+				"stationName": "龙井开山屯",
+				"stationIdC": "E3409",
+				"lat": "42.6992",
+				"lon": "129.7547",
+				"stationType": "area",
+				"dataTime": "202507140000",
+				"value": 18.4,
+				"windDir": null,
+				"windDirName": null
+			},
+			{
+				"province": "吉林省",
+				"city": "延边朝鲜族自治州",
+				"cnty": "龙井市",
+				"stationName": "龙井船口",
+				"stationIdC": "E3423",
+				"lat": "42.7547",
+				"lon": "129.7647",
+				"stationType": "country",
+				"dataTime": "202507140000",
+				"value": 15,
+				"windDir": null,
+				"windDirName": null
+			}
+		]
+	}
+}

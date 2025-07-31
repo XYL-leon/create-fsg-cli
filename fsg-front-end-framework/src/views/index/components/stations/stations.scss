@@ -1,0 +1,67 @@
+.fsg_stations_comp_wrapper {
+    height: 100%;
+
+    .fsg_stations_title {
+        position: relative;
+        height: 48px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        background: linear-gradient(90deg, #A3E2FF 0%, rgba(22, 119, 255, 0.6) 23.92%, rgba(163, 195, 255, 0.2) 85.71%);
+        padding: 0 16px;
+        margin-bottom: 8px;
+
+        .fsg_stations_title_cont {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            font-family: PingFang SC;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            letter-spacing: 0px;
+
+            .weather_icon {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+                color: #1E55CC;
+            }
+
+            .text {
+                font-family: PingFang SC;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+            }
+        }
+
+        .close {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #93ADDD;
+            outline: none;
+            background: none;
+
+            .close_icon {
+                width: 8px;
+                height: 8px;
+                color: #222731;
+            }
+        }
+    }
+
+    .stations_component_wrapper {
+        height: calc(100% - 56px);
+        overflow-y: auto;
+    }
+}

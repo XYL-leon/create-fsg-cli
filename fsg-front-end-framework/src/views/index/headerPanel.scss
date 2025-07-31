@@ -1,0 +1,42 @@
+@use "../../config/layout.scss";
+
+.header_panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: layout.$header_panel_level;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: layout.$header_panel_height;
+    padding: 0 8px 0 12px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: -1px 0px 8px 0px rgba(0, 0, 0, 0.25);
+
+    .system_title {
+        width: 416px;
+        height: 100%;
+        background: #F1F5FF;
+    }
+
+    .header_menus {
+        flex: 1;
+        height: 100%;
+        overflow-x: auto;
+        background: #F1F5FF;
+        margin: 0 36px;
+
+        .container_box {
+            width: 3000px;
+            height: 100%;
+        }
+    }
+
+    .header_user_info {
+        width: 210px;
+        height: 100%;
+        background: #F1F5FF;
+    }
+}
