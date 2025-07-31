@@ -1,6 +1,6 @@
 {
     "name": "create-fsg-cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "fsg脚手架",
     "bin": {
         "create-fsg-cli": "dist/index.js"
@@ -15,15 +15,25 @@
         "cli",
         "scaffolding"
     ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/XYL-leon/create-fsg-cli"
+    },
+    "files": [
+        "dist",
+        "fsg-front-end-framework"
+    ],
     "author": "xyl",
     "license": "MIT",
     "devDependencies": {
         "@clack/prompts": "^0.11.0",
         "@types/cross-spawn": "^6.0.6",
         "@types/node": "^24.1.0",
-        "cross-spawn": "^7.0.6",
         "mri": "^1.2.0",
         "picocolors": "^1.1.1",
         "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "cross-spawn": "^7.0.6"
     }
 }
