@@ -1,15 +1,16 @@
 {
+  "include": ["tsdown.config.ts", "src", "__tests__"],
   "compilerOptions": {
+    "outDir": "dist",
     "target": "ES2023",
     "module": "Preserve",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler",
+    "types": [],
+    "allowImportingTsExtensions": true,
     "strict": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "importHelpers": true,
-  },
-  "include": ["src/**/*","typings.d.ts"],
-  "exclude": ["node_modules", "dist/**/*"],
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "noEmit": true
+  }
 }
